@@ -1,0 +1,10 @@
+.wrapper {
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.title {
+    margin-bottom: 1.5rem;
+}

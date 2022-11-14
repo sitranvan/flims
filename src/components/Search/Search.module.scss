@@ -1,0 +1,35 @@
+@use '../../sass/' as *;
+
+.wrapper {
+    padding-bottom: 3rem;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-input {
+    border: 0;
+    background-color: var(--black);
+    padding: 0.5rem 1.5rem;
+    color: var(--txt-color);
+    border-radius: var(--border-radius);
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 8rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    top: 2px;
+
+    @include mobile {
+        right: 1px;
+        top: 1px;
+    }
+}

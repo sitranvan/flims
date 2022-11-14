@@ -1,0 +1,13 @@
+@use '../../../../sass/' as *;
+
+.hero-slide {
+    margin-bottom: 3rem;
+
+    @include mobile {
+        margin-bottom: unset;
+    }
+
+    @include tablet {
+        margin-bottom: unset;
+    }
+}

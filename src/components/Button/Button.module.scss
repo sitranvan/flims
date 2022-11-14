@@ -1,0 +1,40 @@
+.btn {
+    border: 4px solid transparent;
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    position: relative;
+}
+
+.primary {
+    background-color: var(--main-color);
+    box-shadow: 0 0 7px 8px rgb(255 0 0 / 30%);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 7px 15px rgb(255 0 0 / 30%);
+
+    }
+}
+
+.outline {
+    border: 3px solid var(--white);
+    background-color: transparent;
+    box-shadow: unset;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        box-shadow: unset;
+        color: var(--main-color);
+        background-color: var(--white);
+    }
+}
+
+.small {
+    border-width: 2px;
+    padding: 0.25rem 1.5rem;
+    font-size: 1rem;
+}

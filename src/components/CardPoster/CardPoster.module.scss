@@ -1,0 +1,21 @@
+@use '../../sass/' as *;
+
+.wrapper {
+    padding: 0 2rem;
+
+
+    margin-bottom: 3rem;
+
+}
+
+.swiper-slide {
+    width: 15%;
+
+    @include tablet {
+        width: 30%;
+    }
+
+    @include mobile {
+        width: 40%;
+    }
+}

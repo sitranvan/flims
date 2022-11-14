@@ -1,0 +1,62 @@
+@use '../../sass/' as *;
+
+.footer {
+    position: relative;
+    padding: 6rem 2rem;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.logo-img {
+    font-size: 2.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+
+    &>img {
+        margin-right: 10px;
+        width: 50px;
+
+        @include mobile {
+            width: 30px;
+            margin-right: 0;
+        }
+    }
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    &>*~* {
+        margin-top: 1rem;
+    }
+}
