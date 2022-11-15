@@ -28,7 +28,7 @@ function Similar({ id }) {
             <Swiper grabCursor={true} spaceBetween={10} slidesPerView={'auto'}>
                 {similar.map((item) => (
                     <SwiperSlide key={item.id} className={cx('swiper-slide')}>
-                        <CardItem item={item} />
+                        <CardItem item={item} categoryProps={category} />
                     </SwiperSlide>
                 ))}
             </Swiper>
